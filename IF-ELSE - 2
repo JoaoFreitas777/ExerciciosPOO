@@ -1,0 +1,21 @@
+//Verificação de número par ou ímpar:
+//Escreva um programa Java que solicita ao usuário inserir um número inteiro. O programa deve então verificar se o número é par ou ímpar e imprimir a mensagem correspondente.
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, insira um número:");
+
+            int number = scanner.nextInt();
+
+            if (number % 2 == 0 ) {
+                System.out.println("O número é par.");
+            } else {
+                System.out.println("O número é impar");
+            }
+
+            scanner.close();
+        }
+    }
