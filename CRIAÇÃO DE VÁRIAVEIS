@@ -1,0 +1,12 @@
+//Crie 10 variáveis de sua escolha, utilize tipos de variáveis diferentes
+
+int ano = 2024;
+byte idade = 19;
+short temperatura = 21;
+long cpf = 1234567891L;
+float altura = 1.80f;
+double juros = 2.2541;
+boolean condição = true;
+char caracter = 'a';
+int alunosSala = 25;
+String texto = "ola mundo";
