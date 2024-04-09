@@ -1,0 +1,24 @@
+//Verificação de maior número:
+//Escreva um programa Java que solicita ao usuário inserir dois números inteiros. O programa deve então determinar qual dos dois números é o maior e imprimir essa informação.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Por favor, insira o primeiro número:");
+        int FirstNumber = scanner.nextInt();
+        System.out.println("Por favor, insira o segundo número:");
+        int SecondNumber = scanner.nextInt();
+
+
+        if (FirstNumber > SecondNumber ) {
+            System.out.println("O Primeiro número é maior.");
+        } else {
+            System.out.println("O Segundo número é maior");
+
+        scanner.close();
+    }
+}
+
+    }
