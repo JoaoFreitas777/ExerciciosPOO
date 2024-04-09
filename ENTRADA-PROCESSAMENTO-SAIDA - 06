@@ -1,0 +1,27 @@
+//Faça um sistema que pergunte para o usuario o nome, preço de produto, após isso pergunte qual o percentual de desconto, a saida precisa ser o nome do produto e o novo preço.
+
+import java.util.Scanner;
+
+public class SistemaDescontoProduto {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o nome do produto: ");
+        String nomeProduto = scanner.nextLine();
+
+        System.out.print("Digite o preco do produto: ");
+        double precoProduto = scanner.nextDouble();
+
+        System.out.print("Digite o percentual de desconto: ");
+        double percentualDesconto = scanner.nextDouble();
+
+        scanner.close();
+
+        double desconto = (percentualDesconto / 100) * precoProduto;
+
+        double novoPreco = precoProduto - desconto;
+
+        System.out.println("Nome do produto: " + nomeProduto);
+        System.out.println("Novo preco com desconto: " + novoPreco);
+    }
+}
