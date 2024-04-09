@@ -1,0 +1,22 @@
+//Verificação de idade:
+//Escreva um programa Java que pede ao usuário para inserir sua idade. O programa deve então verificar se a idade é maior ou igual a 18. 
+//Se for, deve imprimir "Você é maior de idade". Caso contrário, deve imprimir "Você é menor de idade".
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, insira sua idade:");
+
+            int idade = scanner.nextInt();
+
+            if (idade >= 18) {
+                System.out.println("Você é maior de idade.");
+            } else {
+                System.out.println("Você é menor de idade.");
+            }
+
+            scanner.close();
+        }
+    }
