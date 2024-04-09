@@ -1,0 +1,25 @@
+//Verificação de login:
+//Crie um programa Java que pede ao usuário para inserir seu nome de usuário e senha. Se o nome de usuário for "usuario" e a 
+//senha for "senha123", o programa deve imprimir "Login bem-sucedido". Caso contrário, deve imprimir "Nome de usuário ou senha incorretos".
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, insira seu usuário:");
+            String name = scanner.nextLine();
+
+            System.out.println("Por favor, insira sua senha:");
+           String password = scanner.nextLine();
+
+
+            if (name.equals("usuario") && password.equals("senha123")) {
+                System.out.println("Login bem-sucedido.");
+            } else {
+                System.out.println("Nome de usuário ou senha incorretos");
+            }
+
+            scanner.close();
+        }
+    }
