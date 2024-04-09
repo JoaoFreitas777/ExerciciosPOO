@@ -1,0 +1,28 @@
+//Crie um Objeto chamado Carro, definina quais são as suas caracteristicas e metodos e crie uma outra classe Chamada CarroTeste para criar o objeto e testar.
+
+Classe Carro
+public class Carro {
+
+    public String nome;
+    public int ano;
+    public int velocidade;
+
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Ano: " + ano);
+        System.out.println("Velocidade: " + ano);
+    }
+}
+
+Classe CarroTeste
+public class CarroTeste {
+    public static void main(String[] args) {
+        Carro carroA = new Carro();
+         carroA.nome = "Gol";
+         carroA.ano = 2011;
+         carroA.velocidade = 180;
+
+         System.out.println("Informações do carro:");
+         carroA.exibirInformacoes();
+        }
+    }
