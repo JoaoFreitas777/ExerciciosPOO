@@ -1,0 +1,27 @@
+//Faça um sistema que o usuario vai informar 2 numeros e o sistema deve retornar a soma, subtração, divisão e multiplicação dos dois numeros.
+
+import java.util.Scanner;
+
+public class OperacoesMatematicas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero: ");
+        double numero1 = scanner.nextDouble();
+
+        System.out.print("Digite o segundo numero: ");
+        double numero2 = scanner.nextDouble();
+
+        scanner.close();
+
+        double soma = numero1 + numero2;
+        double subtracao = numero1 - numero2;
+        double divisao = numero1 / numero2;
+        double multiplicacao = numero1 * numero2;
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtracao: " + subtracao);
+        System.out.println("Divisao: " + divisao);
+        System.out.println("Multiplicacao: " + multiplicacao);
+    }
+}
